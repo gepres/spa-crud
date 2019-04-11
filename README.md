@@ -1,3 +1,5 @@
+`https://www.npmjs.com/package/es6-template-string`
+
 # Preferente es realizar una clonación del repositorio
 Es preferible una clonación del repositorio ya que algunas dependencias de desarrollo por sus actualizaciones tengan confictos, es mejor hacerlo con las que estar en el repositorio.
 Pero si igual quieren hacerlo *paso a paso* tambien hay esa opción.

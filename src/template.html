@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webpack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+  <title>Gepres - CRUD</title>
 </head>
+
 <body>
-  <div id="app">
-  </div>
+  <button class="Header-btn hamburger hamburger--emphatic" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <header class="Header">
+    <div class="Logo">
+      <img src="./img/logo2.svg" alt="Fotógrafo Independiente">
+    </div>
+    <!-- <div class="Title">
+      <h1>Genaro Pretill</h1>
+      <h2><small>Fotógrafo Independiente</small></h2>
+    </div> -->
+    <nav class="Menu">
+      <ul>
+        <li><a id="home" href="#">Inicio</a></li>
+        <li><a id="product" href="#">Productos</a>
+          <ul class="sub-menu">
+            <li class="sub-item>"><a href="#" id="productTable" class="sub-link">Tabla de productos</a></li>
+          </ul>
+        </li>
+        <li><a id="contact" href="#">Proveedor</a></li>
+        <li><a id="admin" href="#">Configuración</a></li>
+      </ul>
+    </nav>
+    <nav class="SocialMedia">
+      <a href="https://twitter.com/gepres/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.instagram.com/gepres/" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://github.com/gepres/" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </nav>
+    <footer class="Footer">
+      <small>
+        &copy;
+        <span class="Footer-year" id="Footer-year"></span>
+      </small>
+    </footer>
+  </header>
+  <nav class="nav-top">
+    <div class="top-email">
+      <span>genaro@gmail.com</span>
+    </div>
+    <div class="top-salir">
+      <button class="btn-salir" id="add">Salir</button>
+    </div>
+  </nav>
+  <main class="Main"></main>
 </body>
+
 </html>

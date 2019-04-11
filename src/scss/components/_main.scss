@@ -1,0 +1,25 @@
+.Main {
+  padding: 0 .5rem;
+  padding-top: var(--header-height);
+  width:100% ;
+  min-height: calc(100vh-3rem);
+  transition:
+    margin-left .3s ease,
+    width .3s ease;
+
+  &.is-active {
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  @include mq(m) {
+    padding-top: calc(var(--header-height) + 2rem);
+  }
+
+  @include mq(l) {
+    padding: 0rem;
+    margin-left: 20%;
+    margin-top: 4rem;
+    width: 80%;
+  }
+}

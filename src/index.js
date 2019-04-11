@@ -1,34 +1,14 @@
-import  style from './style.css'
-import sass from './scss/main.scss'
-import logo from './img/webpack-logo.svg'
-import data from './data.json'
-import {suma} from './suma'
+import styles from './scss/main.scss'
 
-const profesor = 'genaro'
-console.log('hola mundo');
-console.log(`hola ${profesor}`);
-console.log(suma(9,10));
+import toggleNav from './js/toggle_nav'
+import routes from './js/routes'
+import png from './img/logo.png'
 
-const d = document,
-  app = d.getElementById('app'),
-  h1 = d.createElement('h1'),
-  img = d.createElement('img'),
-  p = d.createElement('p'),
-  nav = d.createElement('nav')
 
-let menu = ''
+const FooterYear = document.querySelector('.Footer-year')
 
-data.links.forEach(link => menu += `<a href="${link[1]}">${link[0]}</a>`)
+toggleNav()
+routes()
 
-h1.textContent = 'Webpack'
-p.textContent = 'Creando mi primer aplicación con Webpack'
-img.src = logo
-nav.classList.add('Menu')
-nav.innerHTML = menu
 
-app.appendChild(h1)
-app.appendChild(p)
-app.appendChild(nav)
-app.appendChild(img)
-
-console.log(data)
+FooterYear.textContent = new Date().getFullYear()

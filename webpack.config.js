@@ -21,6 +21,10 @@ module.exports = {
         }
       },
       {
+        test:/\.tlp.html$/,
+        use:'es-template.string'
+      },
+      {
         test: /\.tpl.html$/,
         use: 'es6-template-string'
       },

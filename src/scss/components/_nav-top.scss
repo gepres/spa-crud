@@ -1,0 +1,41 @@
+.nav-top{
+background: red;
+position: fixed;
+z-index: 998;
+top: 0;
+left: 20%;
+width: 80%;
+height: 4rem;
+background-color: var(--second-color);
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.top-email{
+    color:var(--alternate-color);
+    font-weight: 700;
+}
+.top-salir{
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+}
+
+.btn-salir{
+  margin: 1rem auto;
+  padding: .5rem 1rem;
+  outline: 0;
+  border: 2px solid var(--alternate-color);
+  border-radius: .25rem;
+  color:var(--alternate-color);
+  background-color: var(--second-color);
+  cursor: pointer;
+  transition: all .3s ease;
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--alternate-color);
+    color:#fff;
+}
+}

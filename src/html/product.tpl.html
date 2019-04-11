@@ -1,0 +1,34 @@
+<nav class="navbar product-title">
+    <p>Productos</p>
+</nav>
+<div class="product-content">
+  <form class="product-form">
+    <div class="row">
+      <div class="col">
+          <input type="text" maxlength="25" class="form-control" id="addProductModel" placeholder="Modelo" required>
+      </div>
+      <div class="col-4">
+        <input type="text" maxlength="20" class="form-control" id="addProductMarca" placeholder="Marca" required>
+      </div>
+      <div class="col">
+        <input type="text" maxlength="20" class="form-control" id="addProductProveedor" placeholder="Proveedor" required>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <input type="tel" maxlength="8" class="form-control" id="addProductCode" placeholder="codigo" required>
+      </div>
+      <div class="col">
+        <input type="tel" maxlength="8" class="form-control" id="addProductPrice" placeholder="Precio" required>
+      </div>
+      <div class="col input-group ">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="draw-igv">IGV</span>
+        </div>
+        <input type="tel" maxlength="8" class="form-control" id="addProductPriceIgv" aria-describedby="dra-igv" disabled>
+      </div>
+    </div>
+  </form>
+  <button class="btn btn-success" id="btnAddProduct">Agregar</button>
+</div>
+<div class="mt-5" id="notification-add-product"></div>
